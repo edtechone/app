@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?yh2x03');
+  src:  url('fonts/icomoon.eot?yh2x03#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?yh2x03') format('truetype'),
+    url('fonts/icomoon.woff?yh2x03') format('woff'),
+    url('fonts/icomoon.svg?yh2x03#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dashboard-01:before {
+  content: "\e900";
+}
+.icon-form-new:before {
+  content: "\e901";
+}
+.icon-form:before {
+  content: "\e902";
+}
+.icon-home-01:before {
+  content: "\e903";
+}
+.icon-mail:before {
+  content: "\e904";
+}
+.icon-man-01:before {
+  content: "\e905";
+}
+.icon-new-form:before {
+  content: "\e906";
+}
+.icon-notification-01:before {
+  content: "\e907";
+}
+.icon-search-01:before {
+  content: "\e908";
+}
+.icon-user-01:before {
+  content: "\e909";
+}
