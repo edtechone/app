@@ -222,8 +222,7 @@ body {
   background-color: #fff;
   border-right: 1px solid #efefef;
   height: 100%;
-  width: 20%;
-  float: left;
+  /*width: 20%;*/
   min-height: 100vh;
 }
 
@@ -364,10 +363,8 @@ body {
 /*-- dashboard_top_bar starts from here --*/
 
 .dashboard_top_bar {
-  width: 80%;
   height: 80px;
   background-color: #fff;
-  float: right;
   border-bottom: 1px solid #efefef;
 }
 
@@ -653,7 +650,6 @@ body {
 }
 
 .dashboard_top_bar {
-  width: calc(100% - 100px);
 }
 
 .top_bar_search input[type=search] {
@@ -676,9 +672,7 @@ body {
 /*--- Media query end here --*/
 
 .dashboard_content {
-  float: right;
   height: 200px;
-  width: 80%;
 }
 
 .dashboard_content_container {
