@@ -24,7 +24,7 @@
   <body>
     <div class="dashboard">
       <div class="dashboard_container container-fluid nopadding">
-          <div class="sidebar nopadding">
+          <div class="sidebar nopadding col-md-5">
             <div class="sidebar_container">
               <div class="sidebar_logo">
                 <img src="assets/images/edtechone_logo.png" class="company_logo">
@@ -116,7 +116,7 @@
               </div><!-- /.sidebar_navigation -->
             </div><!-- /.sidebar_container -->
           </div><!-- /.sidebar -->
-        <div class="dashboard_top_bar">
+        <div class="dashboard_top_bar col-md-19">
           <div class="dashboard_top_bar_container">
             <div class="top_bar_search">
               <input type="search" name="search" placeholder="Search anything">
@@ -127,7 +127,7 @@
                 <li class="dashboard_notification">
                   <a href="#" id="notification_trigger">
                     <span class="dashboard_notification_icon"><i class="ti-bell"></i></span>
-                    <span class="dashboard_notifcation_count_badge">8</span>
+                    <!--<span class="dashboard_notifcation_count_badge">8</span>-->
                   </a>
                   <ul class="dashboard_notification_ul" id="dashboard_notification_ul_id" style="display:none">
                     <span class="dashboard_notification_tag">Notifications</span>
@@ -158,7 +158,7 @@
                 <li class="dashboard_message">
                   <a href="#" id="message_trigger">
                     <span class="dashboard_message_icon"><i class="ti-email"></i></span>
-                    <span class="dashboard_message_count_badge">8</span>
+                    <!--<span class="dashboard_message_count_badge">8</span>-->
                   </a>
                   <ul class="dashboard_message_ul" id="dashboard_message_ul_id" style="display:none">
                     <span class="dashboard_message_tag">Message</span>
@@ -226,7 +226,7 @@
             <div class="clearfix"></div><!-- /.clearfix -->
           </div><!-- /.dashboard_top_bar_container -->
         </div><!-- /.dashboard_top_bar -->
-        <div class="dashboard_content">
+        <div class="dashboard_content col-md-19">
           <div class="dashboard_content_container container-fluid">
             <div class="dashboard_content_heading">
               <h3>General tables</h3>
@@ -236,8 +236,11 @@
               <div class="content_box responsive_table_box_1">
                 <div class="table-responsive">
                   <div class="table-responsive">
-                    <h5 class="content_box_heading">Student details</h5>
-                    <h6 class="content_box_description">It is an example list of table description</h6>
+                    <div class="content_box_heading_container">
+                      <h5 class="content_box_heading">Student details</h5>
+                      <h6 class="content_box_description">It is an example list of table description</h6>
+                    </div><!-- /.content_box_heading_container -->
+
                     <table class="table">
                       <thead>
                         <tr>
@@ -335,6 +338,7 @@
 
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <script type="text/javascript">
     $(document).ready(function () {
       $(document).click(function () {
