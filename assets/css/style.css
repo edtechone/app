@@ -207,6 +207,7 @@ body {
     background-color: #1c242f;
     margin-left: 100%;
     margin-top: -80px;
+    z-index: 9;
   }
 
   .sidebar_nav_sub_li a {
