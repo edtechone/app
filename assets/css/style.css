@@ -22,7 +22,6 @@ body {
 .nomargin {
   margin-left: 0px;
   margin-right: 0px;
-  background-color: #fff;
 }
 
 .dashboard {
@@ -274,6 +273,18 @@ body {
   color: #666;
 }
 
+@media (max-width: 767px) {
+  .search_top_bar .form-inline .form-control {
+    display: inline-table;
+    width: auto;
+    vertical-align: baseline;
+  }
+
+  .search_top_bar .input-group-btn {
+    display: inline-table;
+  }
+}
+
 .dashboard_top_bar_right {
   float: right;
 }
@@ -413,6 +424,54 @@ body {
 
 /*----- dashboard vontent starts fromhere --*/
 
+.dashboard_content_container {
+  padding: 15px;
+}
+
 .dashboard_content {
 
+}
+
+.dashboard_content_main_heading, .dashboard_content_main_sub_heading, .content_box_heading, .content_box_description {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #666;
+}
+
+.dashboard_content_main_heading {
+  font-size: 16px;
+  margin-top: 10px;
+
+}
+
+.dashboard_content_main_sub_heading {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.content_box_container {
+  background-color: #fff;
+  margin-top: 20px;
+  color: #666;
+  border: 1px solid #efefef;
+  box-shadow: 0px 0px 2px #808270;
+}
+
+.content_box_heading {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.content_box_description {
+  margin-top: 5px;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.responsive_table_box_one {
+  padding: 20px;
+}
+
+.content_box_container table {
+  margin-top: 20px;
 }
