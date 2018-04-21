@@ -30,14 +30,13 @@ body {
 }
 
 .dashboard_container_row {
-  background-color: #efefef;
+  background-color: #f0f1e3;
 }
 
 .sidebar {
   height: 100%;
   min-height: 100vh;
   background-color: #191f28;
-  border-right: 1px solid #efefef;
 }
 
 .sidebar_logo {
@@ -141,15 +140,7 @@ body {
   padding-left: 15px;
 }
 
-.sidebar_push_button_container {
-  height: 70px;
-  float: left;
-}
 
-.sidebar_push_button_container button {
-  margin-left: 20px;
-  margin-top: 20px;
-}
 
 @media only screen and (max-width: 992px) {
 
@@ -241,4 +232,187 @@ body {
 
   .sidebar_nav_sub_li {
   }
+}
+
+/*--- dashboard top bar --*/
+
+.dashboard_top_bar {
+  height: 60px;
+  background-color: #fff;
+}
+
+.sidebar_push_button_container {
+  height: 60px;
+  display: inline-block;
+  width: 54px;
+}
+
+.sidebar_push_button_container button {
+  display: block;
+  background-color: #fff;
+  border: 0px;
+  padding: 20px;
+}
+
+.dashboard_push_button_icon {
+}
+
+.search_top_bar {
+  margin-left: 20px;
+  display: inline-block;
+}
+
+.search_top_bar input {
+  border-radius: 0px;
+}
+
+.search_top_bar button {
+  border-radius: 0px;
+}
+
+.search_top_bar button i {
+  color: #666;
+}
+
+.dashboard_top_bar_right {
+  float: right;
+}
+
+.dashboard_top_bar_right_main_li {
+  display: inline-block;
+  height: 60px;
+  position: relative;
+}
+
+.dashboard_top_bar_right_main_li_active {
+  background-color: #e1e2d2;
+}
+
+.dashboard_top_bar_right_main_a {
+  display: block;
+  padding: 19px 20px;
+  text-decoration: none;
+}
+
+.dashboard_top_bar_right_main_a:hover {
+  text-decoration: none;
+}
+
+.notification_counter, .message_counter {
+  position: absolute;
+  right: 11px;
+  top: 5px;
+  background-color: #f91d83;
+  border-radius: 20px;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}
+
+
+.dashboard_top_bar_right_main_icon i {
+  font-size: 18px;
+  color: #989898;
+}
+
+.dashboard_notification_ul {
+  position: absolute;
+  width: 300px;
+  left: -100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 20px 0px #818276;
+}
+
+.dashboard_message_ul {
+  position: absolute;
+  width: 300px;
+  left: -170%;
+  background-color: #fff;
+  box-sizing: border-box;
+  box-shadow: 0px 15px 20px 0px #818276;
+}
+
+.dashboard_notification_tag, .dashboard_message_tag {
+  display: block;
+  background-color: #e1e2d2;
+  padding: 10px;
+  color: #666;
+}
+
+.dashboard_notification_li, .dashboard_message_li {
+  padding: 10px;
+  border-bottom: 1px solid #efefef;
+}
+
+.dashboard_notification_li:hover {
+  background-color: #f2f3e8;
+}
+
+.dashboard_message_li:hover {
+  background-color: #f2f3e8;
+}
+
+.dashboard_notification_link, .dashboard_message_link {
+  display: block;
+  color: #666;
+  text-decoration: none;
+}
+
+.dashboard_notification_link:hover {
+  text-decoration: none;
+}
+
+.dashboard_message_link:hover {
+  text-decoration: none;
+}
+
+.notification_readed, .message_readed {
+  background-color: #f2f3e8;
+}
+
+.dashboard_notification_image, .dashboard_message_image {
+  display: inline-block;
+}
+
+.dashboard_notification_image i {
+  font-size: 18px;
+  color: #f91d83;
+}
+
+.dashboard_message_image i {
+  font-size: 18px;
+  color: #f91d83;
+}
+
+.dashboard_notification_heading, .dashboard_message_heading {
+  padding-left: 10px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.dashboard_notification_content, .dashboard_message_content {
+  display: block;
+  padding-left: 32px;
+  font-size: 13px;
+  white-space: nowrap;
+  width: 280px;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+.see_all_notification, .see_all_message {
+  display: block;
+  background-color: #e1e2d2;
+  padding: 10px;
+  color: #666;
+}
+
+/*----- dashboard vontent starts fromhere --*/
+
+.dashboard_content {
+
 }
