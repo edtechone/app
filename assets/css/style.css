@@ -476,21 +476,22 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .content_block_heading h4 {
-  padding-top: 10px;
-  padding-left: 10px;
+  padding-top: 20px;
+  padding-left: 20px;
   font-size: 16px;
   color: #666;
 }
 
 .content_block_heading h5 {
   padding-top: 5px;
-  padding-left: 10px;
+  padding-left: 20px;
   font-size: 14px;
   color: #666;
 }
 
 .content_block_material {
-  padding: 10px;
+  padding: 10px 20px;
+  color: #666;
 }
 
 /*-- only for table ---*/
