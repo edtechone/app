@@ -12,6 +12,11 @@ body {
 -moz-osx-font-smoothing: grayscale;
 }
 
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 
 
 .nopadding {
@@ -425,54 +430,71 @@ body {
 
 /*----- dashboard vontent starts fromhere --*/
 
+
 .dashboard_content_container {
-  padding: 15px;
-}
-
-.dashboard_content {
 
 }
 
-.dashboard_content_main_heading, .dashboard_content_main_sub_heading, .content_box_heading, .content_box_description {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  color: #666;
+
+
+.dashboard_headline, .dashboard_headline_description {
+  margin: 0px;
 }
 
-.dashboard_content_main_heading {
+.dashboard_headline {
   font-size: 16px;
-  margin-top: 10px;
-
+  color: #666;
+  font-weight: 400;
+  margin-left: 15px;
+  margin-top: 30px;
 }
 
-.dashboard_content_main_sub_heading {
+.dashboard_headline_description {
   font-size: 14px;
-  margin-top: 4px;
-}
-
-.content_box_container {
-  background-color: #fff;
-  margin-top: 20px;
   color: #666;
-  border: 1px solid #efefef;
-  box-shadow: 0px 0px 2px #808270;
-}
-
-.content_box_heading {
-  margin-left: 10px;
-  font-size: 16px;
-}
-
-.content_box_description {
   margin-top: 5px;
-  margin-left: 10px;
-  font-size: 14px;
+  margin-left: 15px;
 }
 
-.responsive_table_box_one {
-  padding: 20px;
-}
-
-.content_box_container table {
+.dashboard_page_content {
   margin-top: 20px;
 }
+
+.dashboard_page_content_row {
+  margin-top: 20px;
+}
+
+.dashboard_content_block {
+}
+
+.simple_block_container {
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px #a0a097;
+  margin-top: 20px;
+}
+
+.content_block_heading h4 {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 16px;
+  color: #666;
+}
+
+.content_block_heading h5 {
+  padding-top: 5px;
+  padding-left: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.content_block_material {
+  padding: 10px;
+}
+
+/*-- only for table ---*/
+.content_block_material table {
+  margin-bottom: 0px;
+}
+/*-- only for table ---*/
