@@ -250,10 +250,36 @@
                     </ul>
                   </li><!-- /.dashboard_top_bar_right_main_li -->
                   <li class="dashboard_top_bar_right_main_li">
-                    <a href="#" class="dashboard_top_bar_right_main_a">
+                    <a href="#" class="dashboard_top_bar_right_main_a" id="profile_trigger">
                       <span class="dashboard_top_bar_right_user_name"><span class="username_name_hello">Hello, </span>Aditya</span>
-                      <span class="dashboard_top_bar_right_main_icon"><i class="ti-user"></i></span>
+                      <span class="dashboard_top_bar_right_main_icon"><img class="user_image" src="assets/images/user_image.jpg"></span>
                     </a>
+                    <ul class="dashboard_profile_ul" id="dashboard_profile_ul_id" style="display:none">
+                      <li class="dashboard_profile_li">
+                        <a href="#" class="dashboard_profile_link">
+                          <span class="dashboard_profile_image"><i class="ti-announcement"></i></span>
+                          <span class="dashboard_profile_heading">Profile option</span>
+                        </a>
+                      </li>
+                      <li class="dashboard_profile_li">
+                        <a href="#" class="dashboard_profile_link">
+                          <span class="dashboard_profile_image"><i class="ti-announcement"></i></span>
+                          <span class="dashboard_profile_heading">Profile option</span>
+                        </a>
+                      </li>
+                      <li class="dashboard_profile_li">
+                        <a href="#" class="dashboard_profile_link">
+                          <span class="dashboard_profile_image"><i class="ti-announcement"></i></span>
+                          <span class="dashboard_profile_heading">Profile option</span>
+                        </a>
+                      </li>
+                      <li class="dashboard_profile_li">
+                        <a href="#" class="dashboard_profile_link">
+                          <span class="dashboard_profile_image"><i class="ti-announcement"></i></span>
+                          <span class="dashboard_profile_heading">Profile option</span>
+                        </a>
+                      </li>
+                    </ul>
                   </li><!-- /.dashboard_top_bar_right_main_li -->
                 </ul><!-- /.dashboard_top_bar_right_main_ul -->
               </div><!-- /.dashboard_top_bar_right -->
@@ -417,6 +443,21 @@
         $('.dashboard_message_ul').slideToggle();
       });
       $('.dashboard_message_ul').click(function (e) {
+        e.stopPropagation();
+      });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function () {
+      $(document).click(function () {
+        $('.dashboard_profile_ul').slideUp();
+      });
+      $('#profile_trigger').click(function (e) {
+        e.stopPropagation();
+        $('.dashboard_profile_ul').slideToggle();
+      });
+      $('.dashboard_profile_ul').click(function (e) {
         e.stopPropagation();
       });
     });

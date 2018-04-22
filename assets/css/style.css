@@ -318,6 +318,8 @@ h1,h2,h3,h4,h5,h6 {
   text-decoration: none;
 }
 
+
+
 .dashboard_top_bar_right_main_a:hover {
   text-decoration: none;
 }
@@ -348,6 +350,7 @@ h1,h2,h3,h4,h5,h6 {
   background-color: #fff;
   box-sizing: border-box;
   box-shadow: 0px 5px 20px 0px #818276;
+  z-index: 9;
 }
 
 .dashboard_message_ul {
@@ -357,6 +360,17 @@ h1,h2,h3,h4,h5,h6 {
   background-color: #fff;
   box-sizing: border-box;
   box-shadow: 0px 15px 20px 0px #818276;
+  z-index: 9;
+}
+
+.dashboard_profile_ul {
+  position: absolute;
+  width: 200px;
+  left: -50%;
+  background-color: #fff;
+  box-sizing: border-box;
+  box-shadow: 0px 15px 20px 0px #818276;
+  z-index: 9;
 }
 
 .dashboard_notification_tag, .dashboard_message_tag {
@@ -366,7 +380,7 @@ h1,h2,h3,h4,h5,h6 {
   color: #666;
 }
 
-.dashboard_notification_li, .dashboard_message_li {
+.dashboard_notification_li, .dashboard_message_li, .dashboard_profile_li {
   padding: 10px;
   border-bottom: 1px solid #efefef;
 }
@@ -379,7 +393,7 @@ h1,h2,h3,h4,h5,h6 {
   background-color: #f2f3e8;
 }
 
-.dashboard_notification_link, .dashboard_message_link {
+.dashboard_notification_link, .dashboard_message_link, .dashboard_profile_link {
   display: block;
   color: #666;
   text-decoration: none;
@@ -393,12 +407,23 @@ h1,h2,h3,h4,h5,h6 {
   text-decoration: none;
 }
 
+.dashboard_profile_link:hover {
+  text-decoration: none;
+}
+
 .notification_readed, .message_readed {
   background-color: #f2f3e8;
 }
 
 .dashboard_notification_image, .dashboard_message_image {
   display: inline-block;
+}
+
+.dashboard_top_bar_right_main_icon img {
+  width: 25px;
+  height: auto;
+  border-radius: 25px;
+  margin-top: -10px;
 }
 
 .dashboard_notification_image i {
@@ -411,9 +436,14 @@ h1,h2,h3,h4,h5,h6 {
   color: #f91d83;
 }
 
-.dashboard_notification_heading, .dashboard_message_heading {
+.dashboard_notification_heading, .dashboard_message_heading, {
   padding-left: 10px;
   font-weight: 600;
+  font-size: 13px;
+}
+
+.dashboard_profile_heading {
+  padding-left: 20px;
   font-size: 13px;
 }
 
@@ -517,4 +547,20 @@ h1,h2,h3,h4,h5,h6 {
 .select_box, .multiple_select_box {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.dashboard_content_block label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.dashboard_content_block .btn-default {
+  color: #fff;
+  background-color: #f91d83;
+  border-color: #f91d83;
+}
+
+.dashboard_content_block .btn {
+  border-radius: 0px;
+  font-size: 13px;
 }
